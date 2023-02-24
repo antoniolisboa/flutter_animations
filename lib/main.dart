@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'builder_animation.dart';
 import 'xyz_transition.dart';
 import 'tween_animation.dart';
-import 'animated_xyz.dart';
+import 'animated_widgets.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Animation Demo',
       theme: ThemeData(
-        primarySwatch: Colors.amber,
+        primarySwatch: Colors.deepPurple,
       ),
       home: const MyHomePage(),
     );
@@ -37,7 +37,7 @@ class MyHomePage extends StatelessWidget {
           centerTitle: true,
           bottom: const TabBar(
             tabs: [
-              Tab(text: 'Ani..xyz'),
+              Tab(text: 'Animated'),
               Tab(text: 'Tween'),
               Tab(text: 'XYZTra..'),
               Tab(text: 'Builder'),
@@ -46,7 +46,7 @@ class MyHomePage extends StatelessWidget {
         ),
         body: TabBarView(
           children: [
-            // AnimatedXYZ(),
+            AnimatedWidgets(),
             // TweenAnimation(),
             // XYZTransition(),
             // BuilderAnimation(),
