@@ -44,9 +44,7 @@ class _AnimatedWidgetsState extends State<AnimatedWidgets> {
                   _toggle = !_toggle;
                 });
               },
-              child: const Text(
-                'Animate',
-              ),
+              child: const Text('Animate'),
             ),
           ],
         ),

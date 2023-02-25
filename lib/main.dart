@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
+import 'animated_widgets.dart';
+import 'tween_animation.dart';
 import 'builder_animation.dart';
 import 'xyz_transition.dart';
-import 'tween_animation.dart';
-import 'animated_widgets.dart';
 
 void main() {
   runApp(const MyApp());
@@ -44,15 +44,12 @@ class MyHomePage extends StatelessWidget {
             ],
           ),
         ),
-        body: TabBarView(
+        body: const TabBarView(
           children: [
             AnimatedWidgets(),
-            // TweenAnimation(),
+            TweenAnimation(),
             // XYZTransition(),
             // BuilderAnimation(),
-            Container(
-              color: Colors.blueAccent,
-            ),
           ],
         ),
       ),
