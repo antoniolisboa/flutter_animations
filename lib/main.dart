@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'animated_widgets.dart';
 import 'tween_animation.dart';
+import 'widgets_transition.dart';
 import 'builder_animation.dart';
-import 'xyz_transition.dart';
 
 void main() {
   runApp(const MyApp());
@@ -39,16 +39,19 @@ class MyHomePage extends StatelessWidget {
             tabs: [
               Tab(text: 'Animated'),
               Tab(text: 'Tween'),
-              Tab(text: 'XYZTra..'),
+              Tab(text: 'Trasition'),
               Tab(text: 'Builder'),
             ],
           ),
         ),
         body: const TabBarView(
           children: [
+            // Widgets implícitos
             AnimatedWidgets(),
             TweenAnimation(),
-            // XYZTransition(),
+
+            // Widgets explícitos
+            WidgetsTransition(),
             // BuilderAnimation(),
           ],
         ),
