@@ -52,7 +52,7 @@ class MyHomePage extends StatelessWidget {
 
             // Widgets explícitos
             WidgetsTransition(),
-            // BuilderAnimation(),
+            BuilderAnimation(),
           ],
         ),
       ),

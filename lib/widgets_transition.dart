@@ -34,7 +34,10 @@ class _WidgetsTransitionState extends State<WidgetsTransition>
         children: [
           const Text(
             'RotationalTransition',
-            style: TextStyle(fontSize: 24),
+            style: TextStyle(
+              fontSize: 24,
+              color: Colors.black54,
+            ),
           ),
           const SizedBox(height: 10),
           GestureDetector(
@@ -59,7 +62,10 @@ class _WidgetsTransitionState extends State<WidgetsTransition>
           const SizedBox(height: 20),
           const Text(
             'Tap to STOP/START',
-            style: TextStyle(fontSize: 24),
+            style: TextStyle(
+              fontSize: 24,
+              color: Colors.black54,
+            ),
           )
         ],
       ),
